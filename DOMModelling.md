@@ -7,7 +7,6 @@ document.getElementById(id=“second-paragraph”).innerText = “Your new text 
 https://www.codegrepper.com/code-examples/javascript/change+innertext+javascript
 3. Store in a variable the DOM value representing the list of all paragraphs in the document, and print it on the console. You should get the following result:
 const x = document.querySelectorAll(“p”);
-console.log(x)
 Step 7
 1. Implement a new method addParagraph — this method should dynamically create a new p element and store it in a variable.
   addParagraph() {
@@ -16,12 +15,12 @@ Step 7
 2. Set this new element’s content to the string ’This paragraph has been dynamically added by JavaScript! (or something else).
   addParagraph() {
     let p = document.createElement(“p”)
-    p.innerText= “This paragraph has been dynamically added by JavaScript!”
+    p = “This paragraph has been dynamically added by JavaScript!”
   }
 3. Append the element to the main container element.
    addParagraph() {
     let p = document.createElement(“p”)
-    p.innerText = “This paragraph has been dynamically added by JavaScript!”
+    p = “This paragraph has been dynamically added by JavaScript!”
     this.mainContainerEl.append(p)
    }
 4. In the main file, call this new method on the existing View instance.
