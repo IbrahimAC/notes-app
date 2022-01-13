@@ -12,7 +12,7 @@ class MessageView {
       this.hideMessage();
    });
   }
-
+  
   displayMessage() {
     console.log('Thanks for clicking me!');
     let messageEl = document.createElement('div');
